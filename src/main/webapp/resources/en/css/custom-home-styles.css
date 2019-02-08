@@ -1,0 +1,77 @@
+.card-header{
+	padding: 0;
+	background-color: transparent;
+	border-color: #272528;
+}
+.card-header h4{
+	color: #272528;
+	font-size: 13px;
+	font-weight: 500;
+}
+.card-header .card-subtitle span{
+	background-color: #5e394d;
+	color: #fff;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	display: inline-block;
+	padding: 3px 10px;
+	margin-right: 10px;
+}
+.card .card-subtitle{
+	font-size: 12px;
+}
+.card-inner-title{
+	color: #272528;
+	font-weight: 500;
+	font-size: 13px;
+	margin-bottom: 25px;
+}
+.card-details{
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+.card-details a, .card-details a:focus{
+	text-decoration: underline;
+	color: #35aad9;
+	font-size: 12px;
+	display: inline;
+}
+.card-details a:hover{
+	text-decoration: none;
+}
+.card-details i{
+	color: #4f4f4f;
+	font-size: 20px;
+	position: absolute;
+}
+.card-details i::before{
+	color: #4f4f4f;
+}
+.card-details span{
+	font-size: 14px;
+	font-weight: 500;
+}
+.card-details span.blue{
+	color: #379fa0;
+}
+.card-details span.red{
+	color: #f5333a;
+}
+.card-details span.orange{
+	color: #d6851c;
+}
+.card-details ul{
+	margin: 0 0 0 15px;
+	padding: 0;
+}
+.card-details ul li{
+	color: #35aad9;
+	margin-bottom: 15px;
+}
+.card-details ul li a{
+	padding-left: 0;
+}
+.card-no-border .card{
+	height: 100%;
+	margin-bottom: 15px;
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<definition name="common" template="/WEB-INF/tiles/layout/pages-structure/structure.jsp">
+		<put-attribute name="sidebar" value="/WEB-INF/tiles/layout/sidebar.jsp" />
+		<put-attribute name="topbar" value="/WEB-INF/tiles/layout/topbar.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/layout/footer.jsp" />
+		<put-attribute name="app-styles" value="/WEB-INF/tiles/layout/styles.jsp" />
+		<put-attribute name="app-scripts" value="/WEB-INF/tiles/layout/scripts.jsp" />
+	</definition>
+	
+	<definition name="balnk" template="/WEB-INF/tiles/layout/pages-structure/structure.jsp">
+      <put-attribute name="sidebar" value="" />
+      <put-attribute name="topbar" value="" />
+      <put-attribute name="footer" value="" />
+      <put-attribute name="app-styles" value="/WEB-INF/tiles/layout/styles.jsp" />
+      <put-attribute name="app-scripts" value="/WEB-INF/tiles/layout/scripts.jsp" />
+   </definition>
+	
+	<definition name="login" extends="balnk">
+		<put-attribute name="title" value="3arabola" />
+		<put-attribute name="content" value="/WEB-INF/pages/login.jsp" />
+	</definition>
+	
+	<definition name="home" extends="common">
+		<put-attribute name="title" value="3arabola" />
+		<put-attribute name="content" value="/WEB-INF/pages/index.jsp" />
+	</definition>
+	
+	<definition name="list-content" extends="common">
+		<put-attribute name="title" value="3arabola" />
+		<put-attribute name="content" value="/WEB-INF/pages/content/list-content.jsp" />
+	</definition>
+	
+	<definition name="add-content" extends="common">
+      <put-attribute name="title" value="3arabola" />
+      <put-attribute name="content" value="/WEB-INF/pages/content/add-content.jsp" />
+   </definition>
+	
+	<definition name="access-denied" extends="balnk">
+      <put-attribute name="title" value="3arabola" />
+      <put-attribute name="content" value="/WEB-INF/pages/general/access-denied.jsp" />
+   </definition>
+   
+   <definition name="error" extends="balnk">
+      <put-attribute name="title" value="3arabola" />
+      <put-attribute name="content" value="/WEB-INF/pages/general/error.jsp" />
+   </definition>
+   
+   <definition name="page-not-found" extends="balnk">
+      <put-attribute name="title" value="3arabola" />
+      <put-attribute name="content" value="/WEB-INF/pages/general/page-not-found.jsp" />
+   </definition>
+   
+   <definition name="session-expired" extends="balnk">
+      <put-attribute name="title" value="3arabola" />
+      <put-attribute name="content" value="/WEB-INF/pages/general/session-expired.jsp" />
+   </definition>
+	
+</tiles-definitions>

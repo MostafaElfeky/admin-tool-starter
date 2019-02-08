@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+    <title>WISE - Data Collection</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- Custom Calendar -->
+	<link rel="stylesheet" href="../assets/plugins/custom-calendar/css/eventCalendar.css">
+	<link rel="stylesheet" href="../assets/plugins/custom-calendar/css/eventCalendar_theme_responsive.css">
+    <!-- Custom Calendar -->
+    <!-- Custom CSS -->
+    <link href="css/custom-styles.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/custom-icons.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <svg class="circular" viewBox="25 25 50 50">
+            <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar">
+           <div class="container-fluid setting-bar">
+           		<a href="#" class="dropdown-toggle u-dropdown" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"><i class="mdi mdi-settings"></i></a>
+				<div class="dropdown-menu animated flipInY">
+					<!-- text-->
+					<a href="#" class="dropdown-item"><img src="../assets/images/us-flag.jpg" /> English US</a>
+					<!-- text-->
+					<a href="#" class="dropdown-item"><img src="../assets/images/eg-flag.jpg" /> Arabic Egypt</a>
+					<!-- text-->
+				</div>
+           </div>
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../assets/images/logo.jpg" alt="homepage" class="dark-logo" />
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="mdi mdi-menu"></i></a> </li>
+                        <li class="nav-item m-l-10"> <a class="nav-link sidebartoggler hidden-sm-down text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- User profile -->
+                <div class="user-profile">
+                    <!-- User profile image -->
+                    <div class="profile-img"> <img src="../assets/images/users/profile.png" alt="user" />
+                        <!-- this is blinking heartbit-->
+                    </div>
+                    <!-- User profile text-->
+                    <div class="profile-text">
+                        <h5>محمد جمال حسن</h5>
+                        <a href="#" data-toggle="tooltip" title="الملف الشخصي"><i class="mdi mdi-account"></i></a>
+                        <a href="#" data-toggle="tooltip" title="تسجيل الخروج"><i class="mdi mdi-power"></i></a>
+                    </div>
+                </div>
+                <!-- End User profile text-->
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-devider"></li>
+                        <li class="active"> <a class="has-arrow waves-effect waves-dark" href="#"><i class="custom-icon icon-1"></i><span class="hide-menu">الرئيسية</span></a></li>
+                        <li><a class="has-arrow waves-effect waves-dark has-drop" href="#" aria-expanded="false"><i class="custom-icon icon-2"></i><span class="hide-menu">المنشأت</span></a>
+                        	<ul aria-expanded="false" class="collapse">
+                                <li><a href="index.html">مثال علي رابط</a></li>
+                                <li><a href="index2.html">مثال علي رابط</a></li>
+                                <li><a href="index3.html">مثال علي رابط</a></li>
+                                <li><a href="index4.html">مثال علي رابط</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="has-arrow waves-effect waves-dark has-drop" href="#" aria-expanded="false"><i class="custom-icon icon-3"></i><span class="hide-menu">المدارس</span></a>
+                        	<ul aria-expanded="false" class="collapse">
+                                <li><a href="index.html">مثال علي رابط</a></li>
+                                <li><a href="index2.html">مثال علي رابط</a></li>
+                                <li><a href="index3.html">مثال علي رابط</a></li>
+                                <li><a href="index4.html">مثال علي رابط</a></li>
+                            </ul>
+                        </li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#"><i class="custom-icon icon-4"></i><span class="hide-menu">الطلاب</span></a></li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#"><i class="custom-icon icon-5"></i><span class="hide-menu">الموظفين</span></a></li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#"><i class="custom-icon icon-6"></i><span class="hide-menu">الباحثين عن عمل</span></a></li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#"><i class="custom-icon icon-7"></i><span class="hide-menu">سجل المتابعة</span></a></li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#"><i class="custom-icon icon-8"></i><span class="hide-menu">إعلان</span></a></li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#"><i class="custom-icon icon-9"></i><span class="hide-menu">تقارير</span></a></li>
+                        <li>
+                        	<div class="copyrights">
+								<img src="../assets/images/copyrights-logo.png" class="img-fluid" />
+								<p>
+									© جميع الحقوق محفوظة <b>لوحدات تيسير الانتقال لسوق العمل (2018)</b>
+								</p>
+							</div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+<!--
+                <div class="copyrights">
+                	<img src="../assets/images/copyrights-logo.png" class="img-fluid" />
+                	<p>
+                		© All Rights Reserved <b>Transition to Employment Units (2018)</b>
+                	</p>
+                </div>
+-->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <div class="row page-titles">
+                <div class="col-md-7 align-self-center">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">الرئيسية</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Bread crumb and right sidebar toggle -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <!-- Row -->
+                <div class="row">
+                    <div class="col-lg-6 m-b-20">
+                        <div class="card">
+                            <div class="card-body">
+                               	<div class="card-header">
+									<h4 class="card-title">أهلا بك</h4>
+									<h6 class="card-subtitle"><span>1</span>تم إضافة فرصة عمل جديدة</h6>
+                                </div>
+                                <!-- ============================================================== -->
+                                <!-- To do list widgets -->
+                                <!-- ============================================================== -->
+                                <div class="to-do-widget m-t-20">
+                                  	 <div class="card-inner-title">
+                                  	 	تحديثات
+                                  	 	<a class="pull-right btn btn-sm btn-info" href="#">المزيد</a>
+                                  	 </div>
+									<div class="row card-details">
+										<div class="col-lg-7">
+											<span class="blue">3</span> مدارس موافق عليها من قبل ال LUTE <a href="#">عرض</a>
+										</div>
+										<div class="col-lg-5">
+											<span class="red">4</span> طلبات اضافة طلاب <a href="#">عرض</a>
+										</div>
+									</div>
+                               		<div class="row card-details">
+										<div class="col-lg-7">
+											<span class="blue">1</span> سجل متابعة موافق عليه <a href="#">عرض</a>
+										</div>
+										<div class="col-lg-5">
+											<span class="orange">2</span> منشأة قيد النظر <a href="#">عرض</a>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-b-20">
+                        <div class="card">
+                            <div class="card-body">
+                            	<div class="card-header no-border">
+                            		<h4 class="card-title">دليل متابعة الزيارات</h4>
+                            	</div>
+                                <div class="to-do-widget">
+                                  	 <div class="row">
+										<div class="col-md-12">
+											<div id="eventCalendarDefault"></div>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 m-b-20">
+                        <div class="card">
+                            <div class="card-body">
+                            	<div class="card-header no-border">
+                            		<h4 class="card-title">العمليات الأكثر تكرارا
+									<a class="pull-right btn btn-sm btn-info" href="#" data-toggle="modal" data-target="#responsive-modal"><i class="fa fa-plus"></i> أضف عملياتك المفضلة</a>
+									</h4>
+                            	</div>
+                            	<!-- Modal content -->
+								<div id="responsive-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title">أضف عملياتك المفضلة</h4>
+												<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+											</div>
+											<div class="modal-body">
+												<form>
+													<div class="form-group row mb-0">
+														<div class="col-md-12">
+															<div class="checkbox checkbox-primary pull-left p-t-0">
+																<input id="checkbox-signup" type="checkbox">
+																<label for="checkbox-signup" class="custom-check-icon"><i class="custom-icon icon-10"></i> أضف منشأة </label>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<div class="checkbox checkbox-primary pull-left p-t-0">
+																<input id="checkbox-signup2" type="checkbox">
+																<label for="checkbox-signup2" class="custom-check-icon"><i class="custom-icon icon-11"></i> أضف منشأة </label>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<div class="checkbox checkbox-primary pull-left p-t-0">
+																<input id="checkbox-signup3" type="checkbox">
+																<label for="checkbox-signup3" class="custom-check-icon"><i class="custom-icon icon-12"></i> أضف منشأة </label>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<div class="checkbox checkbox-primary pull-left p-t-0">
+																<input id="checkbox-signup4" type="checkbox">
+																<label for="checkbox-signup4" class="custom-check-icon"><i class="custom-icon icon-13"></i> أضف منشأة </label>
+															</div>
+														</div>
+														<div class="col-md-12">
+															<button type="button" class="btn btn-info btn-sm waves-effect waves-light pull-right">حفظ</button>
+															<button type="button" class="btn btn-default btn-sm waves-effect pull-right" data-dismiss="modal">إلغاء</button>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /.modal -->
+								<div class="row m-t-30">
+									<div class="col-lg-6 card-details">
+										<i class="custom-icon icon-10"></i> <a href="#" class="used-actions-icons">أضف منشأة</a>
+									</div>
+									<div class="col-lg-6 card-details">
+										<i class="custom-icon icon-11"></i> <a href="#" class="used-actions-icons">ارسل استمارة العمل الشهرية</a>
+									</div>
+								</div>
+                                <div class="divider"></div>
+                                <div class="to-do-widget m-t-20">
+                                  	 <div class="card-inner-title">
+                                  	 	عمليات أخري
+                                  	 </div>
+                                  	 <div class="row">
+										<div class="col-lg-6 card-details">
+											<i class="custom-icon icon-12"></i> <a href="#" class="used-actions-icons">أضف زيارة إلى جدول المتابعات</a>
+										</div>
+										<div class="col-lg-6 card-details">
+											<i class="custom-icon icon-13"></i> <a href="#" class="used-actions-icons">عرض الملفات التي تم تحميلها</a>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 m-b-20">
+                        <div class="card">
+                            <div class="card-body">
+                            	<div class="card-header no-border">
+                            		<h4 class="card-title">أحدث الأنشطة
+									<a class="pull-right btn btn-sm btn-info" href="#">المزيد</a>
+									</h4>
+                            	</div>
+                                <div class="to-do-widget m-t-20">
+                                  	 <div class="row">
+										<div class="col-lg-12 card-details">
+											<ul>
+												<li><a href="#">تم ارسال استمارة عمل</a><span class="activity-time">منذ ساعة</span></li>
+												<li><a href="#">تمت الموافقة علي عامل من قبل أحمد محمد</a><span class="activity-time">منذ ساعة</span></li>
+												<li><a href="#">تمت الموافقة علي الطالب محسنرامي من قبل أحمد محمد</a><span class="activity-time">منذ ساعة</span></li>
+												<li><a href="#">تمت رفض منشأة حديد المصريين من قبل أحمد بركات</a></li>
+											</ul>
+										</div>
+									</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Row -->
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../assets/plugins/jquery/jquery.min.js" type="text/javascript"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../assets/plugins/bootstrap/js/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="js/sidebarmenu.js"></script>
+    <!--stickey kit -->
+    <script src="../assets/plugins/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="js/custom.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugins -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Calendar Plugin -->
+    <!-- ============================================================== -->
+    <script>
+		$(document).ready(function() {
+			$("#eventCalendarDefault").eventCalendar({
+				eventsjson: '../assets/plugins/custom-calendar/json/events-ar.json',
+				dateFormat: 'dddd D MMM',
+				eventsScrollable: true,
+				startWeekOnMonday: false,
+				showDescription: true,
+				locales: {
+					locale: "ar",
+					txt_noEvents: "لا توجد أحداث في هذه الفترة",
+					txt_NextEvents: "الحدث التالي:",
+					txt_GoToEventUrl: "See the event",
+					txt_loading: "تحميل..."
+				}
+			});
+			
+			var checkMeeting = setInterval(function(){
+				if($('.meeting time small')){
+					$('.meeting').each(function(){
+						var MyTime = $(this).find('time').find('small').html();
+						$(this).find('#MeetingDate').html(MyTime);
+					});
+					clearInterval(checkMeeting);
+				}
+			}, 700);
+			$('.eventCalendar-slider').on('click',function(){
+				var checkMeeting = setInterval(function(){
+				if($('.meeting time small')){
+					$('.meeting').each(function(){
+						var MyTime = $(this).find('time').find('small').html();
+						$(this).find('#MeetingDate').html(MyTime);
+					});
+					clearInterval(checkMeeting);
+				}
+				if($('.eventCalendar-noEvents')){
+					clearInterval(checkMeeting);
+				}
+			}, 700);
+			});
+		});
+	</script>
+	<script src="../assets/plugins/custom-calendar/js/moment.js" type="text/javascript"></script>
+	<script src="../assets/plugins/custom-calendar/js/jquery.eventCalendar-ar.js" type="text/javascript"></script>
+    
+</body>
+</html>
