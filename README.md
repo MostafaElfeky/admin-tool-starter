@@ -1,6 +1,3 @@
-# admin-tolol-starter
-
-
 
 # Start Up project Modules
 
